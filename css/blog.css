@@ -6,12 +6,14 @@ background-color: #FEF0FD;
 margin: 1em 0;
 overflow: hidden;
 
+
 }
 
 .mensajes{
    padding: 1em;
    min-width: 380px;
-   
+   overflow-y: scroll;
+   height: 1000px;
     background-color: #FEF0FD;
     
 }
@@ -33,21 +35,37 @@ overflow: hidden;
 }
 
 .galeria{
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5em;
-    margin-bottom: 2em;
+    
+   
+   
     
 }
 
 .galeria img{
-    box-sizing: border-box;
-    width: 15em;
-    margin: 0.5em;
+  
+    width: 200px;
+   
     border-radius: 10px;
+}
+
+.dejarMensaje{
+    margin: 30px 0px 20px;
+}
+
+.dejarMensaje form{
+  
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: center;
+ 
+}
+
+input{
+    width: 250px;
+    height: 30px;
+    border: 0;
+    border-radius: 8px;
 }
 
 main{
