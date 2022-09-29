@@ -1,0 +1,24 @@
+body{
+    height: 100%;
+    overflow-y: hidden;
+    position: absolute;
+    width: 100%;
+  }
+
+footer{
+    position: absolute;
+    bottom: 0;
+    
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+main{
+    box-sizing: border-box;
+    margin: 3em 10em;
+    height: 565px;
+    position: relative;
+    top: 115px;
+
+overflow-y: hidden;
+}
