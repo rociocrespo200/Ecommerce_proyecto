@@ -1,9 +1,10 @@
 section.productos{
-    margin: 0 8em;
+    padding: 0 8em;
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 section.productos a{
     display: block;
@@ -31,6 +32,14 @@ section.productos a{
     background-blend-mode: overlay;
     color: white;
     font-weight: 1000;
+    transition: 0.4s background-color ease;
+    transition: 0.4s transform ease;
+}
+
+main#productos{
+    margin: 0;
+    height: 660px;
+    padding: 60px 10em 10px;
 }
 
 

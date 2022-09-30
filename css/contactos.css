@@ -71,7 +71,7 @@ h2{
 .preguntas h4:hover{
     background-color: #abcfd9;
     color: white;
-    
+    transition: 0.1s background-color ease;
     
 }
 

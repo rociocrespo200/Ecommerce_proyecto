@@ -61,6 +61,7 @@ header .principal a {
 header .principal a:hover {
     background-color: #abcfd9;
     color: white;
+   
 }
 
 .secundario {
@@ -68,10 +69,12 @@ header .principal a:hover {
     justify-content: right;
     align-items: center;
     padding: 1em;
+    color: #5091b8;
+    gap: 5px;
 }
 
 header .secundario a {
-    padding-left: 0.5em;
+    
     text-decoration: none;
     color: #5091b8;
 }
@@ -113,10 +116,11 @@ footer .footer1 {
 }
 
 .footer1 a:hover{
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255);
     background-color: #abcfd9;
     border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    text-decoration: underline;
     
 }
 
@@ -186,6 +190,7 @@ h2{
 
 .boton:hover{
     transform: scale(1.1);
+    transition: 0.2s transform ease;
   }
 
   ::placeholder{

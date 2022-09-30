@@ -26,26 +26,76 @@ overflow: hidden;
 }
 
 .mensaje img {
-    background-color: rgb(208, 208, 208);
-    width: 2em;
-    height: 2em;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 100%;
+   
+width: 50px;
+height: 50px;
 }
 
 .galeria{
+   max-height: 1030px;
+   box-sizing: border-box;
+   overflow-y: scroll;
+   background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 80px 0 50px;
+  gap: 10px;
+  justify-content: center;
     
-   
+}
+
+
+.galeria img{
+    width: 200px;
+   height: 150px;
+    border-radius: 10px;
+}
+
+.paginacion{
+    display: flex;
+    flex-direction: row;
+    background-color: #abcfd9;
+    border-radius: 10px;
+    
+}
+
+
+
+.paginacion a{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff;
+    
+    padding: 10px 20px;
+    
    
     
 }
 
-.galeria img{
-  
-    width: 200px;
+#icon:hover{
+    scale: 1.1;
    
-    border-radius: 10px;
+}
+
+.paginacion a:hover{
+    display: inline-block;
+    background-color: #52687e28;
+    transition: 0.2s background-color ease;
+    
+}
+.paginacion_a1:hover{
+
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.paginacion_a2:hover{
+
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 
 .dejarMensaje{
@@ -57,15 +107,16 @@ overflow: hidden;
     display: flex;
     flex-direction: row;
     gap:10px;
+    align-items: center;
     justify-content: center;
  
 }
 
-input{
-    width: 250px;
-    height: 30px;
+textarea{
+    width: 300px;
+    height: 40px;
     border: 0;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 main{

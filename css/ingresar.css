@@ -15,8 +15,9 @@ main{
 .cont_form{
     
     background-color: #FEF0FD;
-    padding: 3em 8em;
+    padding: 3em 4em;
     border-radius: 10px;
+    width: 19em;
 }
 
 input{
@@ -53,6 +54,12 @@ a{
 a:hover{
     text-decoration: underline;
     color: #5091b8;
+}
+
+main#ingresar{
+    margin: 0;
+    height: 660px;
+    padding: 10px 10em 10px;
 }
 
 @media only screen and (max-width: 1000px) {
