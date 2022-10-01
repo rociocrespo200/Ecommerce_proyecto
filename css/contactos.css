@@ -21,7 +21,7 @@ div.texto{
 
 section.contactanos div{
     padding: 3em 5em;
-    max-width: 50%;
+    max-width: 80%;
     width: 30%;
     border-radius: 10px;
    
@@ -30,6 +30,7 @@ section.contactanos div{
 div.formulario{
     background-color: #FEF0FD;
     text-align: center;
+    min-width: 300px;
 }
 
 input{
@@ -91,4 +92,48 @@ h2{
     display: block;
 
     
+}
+
+@media only screen and (max-width: 1200px) {
+  
+    main{
+        margin: 10em 2em 2em;
+    }
+
+    .formulario{
+        padding: 2em 3em;
+    }
+    .texto{
+        font-size: 14px;
+       }
+}
+
+@media only screen and (max-width: 800px) {
+  section.contactanos{
+    flex-direction: column;
+    margin-bottom: 0cm;
+  }
+
+  main{
+    margin: 9em 2em 0em;
+  }
+
+  section.contactanos div{
+    width: 60%;
+}
+   
+}
+
+@media only screen and (max-width: 600px) {
+main{
+    margin-top: 6em ;
+}
+
+    div#formulario{
+        margin: 0 1em;
+        padding: 2em 3em;
+        width: 200px;
+        font-size: 14px;
+        min-width: 250px;
+    }
 }

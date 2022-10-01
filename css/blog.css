@@ -18,6 +18,10 @@ overflow: hidden;
     
 }
 
+.mensajes::-webkit-scrollbar {
+    display: none;
+}
+
 .mensaje p{
     background-color: white;
     border-radius: 10px;
@@ -40,9 +44,23 @@ height: 50px;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 80px 0 50px;
-  gap: 10px;
+  gap: 30px;
   justify-content: center;
+  margin: auto 1em;
     
+}
+
+.galeria::-webkit-scrollbar {
+    display: none;
+}
+
+.galeria_div_galeria{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
 
@@ -53,6 +71,7 @@ height: 50px;
 }
 
 .paginacion{
+    width: 350px;
     display: flex;
     flex-direction: row;
     background-color: #abcfd9;
@@ -119,13 +138,14 @@ textarea{
     border-radius: 6px;
 }
 
-main{
+.main_blog{
     position: relative;
     top: 7.1em;
    box-sizing: content-box;
     display: flex;
     margin: 0 10em;
     min-height: 0;
+
 }
 
 footer{
@@ -133,5 +153,93 @@ footer{
     top: 7.1em;
 }
 
+
+@media only screen and (max-width: 1500px) {
+  
+    main.main_blog{
+        margin: 0 3em;
+    }
+
+   section.mensajes{
+    min-width: 300px;
+   }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    section.mensajes{
+        min-width: 200px;
+       }
+
+   section.mensajes img{
+    display: none;
+   }
+
+   section.mensajes img#icon{
+    display: block;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+  
+    main.main_blog{
+       flex-direction: column;
+       gap: 20px;
+    }
+
+    div.dejarMensaje textarea{
+        width: 2000px;
+        border: 0.1px solid #5090b861;
+    }
+
+    section.mensajes{
+        background-color: #ffffff;
+       }
+
+    div.mensaje{
+        background-color: #ffffff;
+        border-bottom: 0.1px solid #5090b861;
+    }
+
+   section.mensajes img{
+    display: unset;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+  
+    main#main_blog{
+        margin-top: 0em;
+    }
+    
+    main.main_blog{
+        margin: 0 1.5em;
+    }
+    
+    div.paginacion{
+        width:250px ;
+       
+    }
+
+    div.paginacion a{
+        padding: 5px 10px;
+       
+    }
+
+    #galeria{
+       padding: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+  
+  div#galeria_div_galeria img{
+    width: 150px;
+    height: 100px;
+  }
+
+}
 
 

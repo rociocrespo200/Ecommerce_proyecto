@@ -21,3 +21,47 @@ main{
     height: 68vh;
     overflow-y: hidden;
 }
+
+@media only screen and (max-width: 800px) {
+    
+    main#productos{
+      overflow-y: hidden;
+    }
+
+   #footer_productos{
+        position: relative;
+        bottom: auto;
+    }
+    body#productos{
+        overflow-y: scroll;
+        z-index: 1;
+    }
+
+}
+
+@media only screen and (max-height: 920px){
+    
+    main#productos{
+        overflow-y: hidden;
+      }
+  
+     #footer_productos{
+          position: relative;
+          top: 5em;
+      }
+      body#productos{
+          overflow-y: scroll;
+          z-index: 1;
+      }
+
+      
+      @media only screen and (max-width: 1000px){
+        #footer_productos{
+            position: relative;
+            top: 10em;
+        }
+      }
+
+     
+
+}
