@@ -1,16 +1,15 @@
 section.productos{
-    padding: 0 8em;
-    display: flex;
+    display: grid;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: 250px 250px 250px 250px ;
+    grid-template-rows: auto auto ;
+    gap: 8px;
     
 }
+
 section.productos a{
     display: block;
-    width: 250px;
-    
-    margin: 0.5em;
+    width: 100%;
     background-size: cover;
     border-radius: 10px;
     text-align: center;
@@ -23,6 +22,10 @@ section.productos a{
     font-size: 20px;
     
     
+}
+
+main#productos h2{
+    text-align: center;
 }
 
 
@@ -39,7 +42,81 @@ section.productos a{
 main#productos{
     margin: 0;
     height: 660px;
-    padding: 60px 10em 10px;
+    padding: 80px 5% 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    section.productos{
+        grid-template-columns: 200px 200px 200px 200px ; 
+        grid-template-rows: 150px 150px; 
+    }  
+
+    section.productos a{
+        line-height: 8em;    
+    }
+
+    main#productos{
+        
+        padding: 120px 5% 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    section.productos{
+        grid-template-columns: 200px 200px 200px ; 
+        grid-template-rows: 150px 150px 150px; 
+        justify-items: baseline;
+    }  
+    main#productos{
+        padding: 80px 5% 10px;
+       
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    
+    section.productos{
+        grid-template-columns: 200px 200px ; 
+        grid-template-rows:  150px 150px 150px 150px; 
+        justify-items: baseline;
+    }  
+    main#productos{
+        padding: 80px 5% 10px;
+       height: 100%;
+      
+    }
+   
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    main#productos{
+        padding: 20px 5% 30px;
+       height: auto;
+    }
+    main#productos, footer{
+        top: 5em
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    section.productos{
+        grid-template-columns: 200px ; 
+        grid-template-rows:  150px 150px 150px 150px 150px 150px 150px 150px; 
+        justify-items: baseline;
+    }  
+   
+    main#productos{
+        padding: 20px 5% 30px;
+       height: auto;
+    }
+
+
 }
 
 
