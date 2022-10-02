@@ -99,6 +99,14 @@ h2{
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 1600px) {
+
+    div#texto_sld{  
+        left:18%  
+    }
+  
+}
+
 @media only screen and (max-width: 1500px) {
   
     div.imagenes{
@@ -111,16 +119,21 @@ h2{
     div#texto_sld{
         box-sizing: border-box;
         left: 0;
-        padding: 1em 5em;
-        top: 19em;
+        padding: 1em 13em;
+        top: 19em;;
         width: 100%;
         height: 11em;
+        
     }
     div#texto_sld a{
         display: none;
     }
     #div_sinfondo, div#promociones, section#blog{
         margin: 0 4em;
+    }
+
+    #div_sinfondo{
+        width: 850px;
     }
 
     section#blog{
@@ -144,6 +157,14 @@ h2{
     max-width: 100%;
    
    }
+
+   #div_sinfondo{
+    width: 700px;
+}
+
+    div#texto_sld{
+        padding: 1em 6em;
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -153,12 +174,19 @@ h2{
     }
 
     div#texto_sld{
-        top: 12em;
-        height: 15em;
+        top: 16em;
+        height: 12em;
+        padding: 1em 4em;
     }
 
     #div_sinfondo, #slider{
-        height: 25em;
+        height: 28em;
+        
+        
+    }
+
+    #div_sinfondo{
+        width: 580px;
     }
 
     #promociones img{
@@ -172,11 +200,22 @@ h2{
   
     div#texto_sld{
         font-size: 14px;
-        top: 15em;
+        height: 13em;
+        top: 18em;
     }
 
     div#texto_sld h3{
         font-size: 50px;
+    }
+
+    #div_sinfondo, #slider{
+        height: 26em;
+        
+    }
+
+    #div_sinfondo{
+        width: 100%;
+        border-radius: 0%;
     }
     
 }
@@ -186,11 +225,18 @@ h2{
     div#texto_sld{
         padding: 1em 1.5em;
         height: 12em;
-        top: 10em;
+        top: 18em;
     }
-    #div_sinfondo, #slider{
-        height: 18em;
+ 
+
+    div#texto_sld h3{
+        font-size: 40px;
     }
+    
+}
+
+@media only screen and (max-width: 400px) {
+  
 
     div#texto_sld h3{
         font-size: 40px;
