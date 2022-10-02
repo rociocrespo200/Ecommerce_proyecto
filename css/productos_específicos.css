@@ -1,0 +1,25 @@
+main {
+    display:flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+.section_pEspecífico img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.section_pEspecífico { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: antiquewhite;
+    
+}
+.section_rellenos {
+width: 750px;
+background-color: aquamarine;
+}
