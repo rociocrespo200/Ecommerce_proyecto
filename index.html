@@ -15,8 +15,11 @@
     <header>
         <div class="div_nologo">
             <div class="secundario">
-                <img class="icon" src="img/icono4.png" alt="icono4">
-                <a class="ingresar" href="ingresar.html"> Iniciar sesión / Registrarse</a>
+                <img class="icon" id="icon" src="img/icono4.png" alt="icono4">
+                <a class="ingresar" href="ingresar.html"> Iniciar sesión  </a>
+                <p>  / </p>
+                <a class="registrarse" href="registrase.html"> Registrarse</a>
+
             </div>
             <div class="principal">
 
@@ -27,15 +30,15 @@
                 <a href="contacto.html">Contacto</a>
             </div>
         </div>
-        <div class="div_logo">
+        <div class="div_logo" id="div_logo">
             <img class="logo_mod" src="img/Logo.png" alt="logo">
         </div>
     </header>
 
     <main class="main_index">
 
-        <section class="slider">
-            <div class="div_sinfondo">
+        <section class="slider" id="slider">
+            <div class="div_sinfondo" id="div_sinfondo">
                 <div class="lista_sld">
                     <figure id="slider">
                         <img src="img/Torta_Frida.jpg" alt="">
@@ -44,8 +47,8 @@
                     </figure>
                 </div>
 
-                <div class="texto_sld">
-                    <div>
+                <div class="texto_sld" id="texto_sld">
+                    
                         <h3>Pasteito Candy</h3>
                         <h4>AMARAS NUESTRO SABOR</h4>
                         <p>
@@ -55,21 +58,24 @@
                             no molesta.
                         </p>
                         <a href="productos.html">Nuestros productos</a>
-                    </div>
+                    
                 </div>
             </div>
 
-            <div class="fondo_sld">
-                <img src="img/fondo.png" alt="">
-            </div>
+            
 
         </section>
 
 
-        <section>
+        <section class="section_promociones " id="section_promociones">
             <h2>Promociones</h2>
-            <div class="promociones">
+            <div class="promociones" id="promociones">
 
+                <img src="img/cupcakes.jpg" alt="">
+                <img src="img/cupcakes.jpg" alt="">
+                <img src="img/cupcakes.jpg" alt="">
+                <img src="img/cupcakes.jpg" alt="">
+                <img src="img/cupcakes.jpg" alt="">
                 <img src="img/cupcakes.jpg" alt="">
                 <img src="img/cupcakes.jpg" alt="">
                 <img src="img/cupcakes.jpg" alt="">
@@ -77,8 +83,8 @@
                 <img src="img/cupcakes.jpg" alt="">
             </div>
         </section>
-        <section class="blog">
-            <div>
+        <section class="blog" id="blog">
+            <div class="blog_texto" id="blog_texto">
                 <h4>Ingresa a nuestro blog y compartinos tus recetas</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi possimus voluptate cum eaque deleniti.
                     Commodi explicabo ipsa blanditiis magni eaque, mollitia impedit? Deserunt consequatur non quae
@@ -88,10 +94,10 @@
                 <a class="boton" href="ingresar.html">Ingresar</a>
             </div>
             <div class="imagenes">
-                <img src="img/promociones.jpg" alt="">
-                <img src="img/promociones2.jpg" alt="">
-                <img src="img/promociones3.jpg" alt="">
-                <img src="img/promociones4.jpg" alt="">
+                <div class="imagenes_1" ><img id="imagenes_dobles" src="img/promociones.jpg" alt=""></div>
+                <div class="imagenes_2"><img src="img/promociones2.jpg" alt=""></div>
+                <div class="imagenes_3"><img src="img/promociones3.jpg" alt=""></div>
+                <div class="imagenes_4"><img id="imagenes_dobles" src="img/promociones4.jpg" alt=""></div>
             </div>
         </section>
 
@@ -117,8 +123,8 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer1">
+    <footer id="productos">
+        <div class="footer1" id="footer1">
             <div>
                 <a href="index.html">Inicio</a>
                 <a href="productos.html">Productos</a>

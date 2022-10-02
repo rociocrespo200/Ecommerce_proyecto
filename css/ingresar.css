@@ -3,7 +3,7 @@ main{
    text-align: center;
     
     padding: 3em 5em;
-    
+    height: 100%;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -13,10 +13,11 @@ main{
 
 
 .cont_form{
-    
+    box-sizing: border-box;
     background-color: #FEF0FD;
-    padding: 3em 8em;
+    padding: 3em 4em;
     border-radius: 10px;
+    width: 500px;
 }
 
 input{
@@ -55,12 +56,48 @@ a:hover{
     color: #5091b8;
 }
 
-@media only screen and (max-width: 1000px) {
-    .cont_form{
-        background-color: #5091b8;
-    }
+main#ingresar{
+    margin: 0;
+    margin-top: 20px;
+    padding: 15% 10em 15%;
+}
 
-    .main{
-        width: 350px;
+@media only screen and (max-width: 700px) {
+    
+    main#ingresar{
+        padding: 10px 2em 10px;
     }
 }
+@media only screen and (max-width: 450px) {
+    
+    .cont_form{
+        padding: 3em 2em;
+
+    }
+}
+
+
+@media only screen and (max-height: 920px) {
+    
+    main#ingresar{
+      overflow-y: hidden;
+     position: relative;
+     margin: 0;
+     margin-top: 4em;
+      
+    }
+
+   #footer_ingresar{
+       position: relative;
+       top: 10em;
+    }
+    body#ingresar{
+        overflow-y: scroll;
+        z-index: 1;
+    }
+
+}
+
+
+
+
