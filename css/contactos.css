@@ -1,139 +1,130 @@
-iframe{
-    width: 100%;
-   
+iframe {
+  width: 100%;
 }
 
-section.pregunta div{
-    width: 100%;
-    
+section.pregunta div {
+  width: 100%;
 }
 
-section.contactanos{
-    display: flex;
-    margin: 3em 0em;
-    justify-content: space-around;
-    align-items: center;
+section.contactanos {
+  display: flex;
+  margin: 3em 0em;
+  justify-content: space-around;
+  align-items: center;
 }
 
-div.texto{
-    text-align: left;
+div.texto {
+  text-align: left;
 }
 
-section.contactanos div{
-    padding: 3em 5em;
-    max-width: 80%;
-    width: 30%;
-    border-radius: 10px;
-   
+section.contactanos div {
+  padding: 3em 5em;
+  max-width: 80%;
+  width: 30%;
+  border-radius: 10px;
 }
 
-div.formulario{
-    background-color: #FEF0FD;
-    text-align: center;
-    min-width: 300px;
+div.formulario {
+  background-color: #fef0fd;
+  text-align: center;
+  min-width: 300px;
 }
 
-input{
-    width: 90%;
-    height: 2.5em;
-    margin: 0.4em 0px;
-    border: 0px;
-    border-radius: 5px;
+input {
+  width: 90%;
+  height: 2.5em;
+  margin: 0.4em 0px;
+  border: 0px;
+  border-radius: 5px;
 }
 
-textarea{
-    width: 100%;
-    margin: 0.4em 0px;
-    border: 0px;
-    border-radius: 5px;
+textarea {
+  width: 100%;
+  margin: 0.4em 0px;
+  border: 0px;
+  border-radius: 5px;
 }
 
-h2{
-    color: #abcfd9;
-    
+h2 {
+  color: #abcfd9;
 }
 
-.preguntas{
-    
-    
+.pregunta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.preguntas a{
-    text-decoration: none;
-    display: block;
-    color: #abcfd9;
-    
-    border-radius: 10px;
-    padding: 1em;
-   
-
+.preguntas a {
+  text-decoration: none;
+  display: block;
+  color: #abcfd9;
+  border-radius: 10px;
+  padding: 1em;
 }
 
-.preguntas h4:hover{
-    background-color: #abcfd9;
-    color: white;
-    transition: 0.1s background-color ease;
-    
+.preguntas h4:hover {
+  background-color: #abcfd9;
+  color: white;
+  transition: 0.1s background-color ease;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
-.preguntas h4{
-    background-color: #ffffff;
-    color: #5091b8;
-    padding: 1em;
-    border-radius: 10px;
+.preguntas h4 {
+  background-color: #ffffff;
+  color: #5091b8;
+  padding: 1em;
 }
 
-.preguntas p{
-    padding: 1em;
-    
+.preguntas p {
+  padding: 1em;
+  border-left: 1px solid #abcfd9;
+  border-right: 1px solid #abcfd9;
 }
 
-.preguntas p:target{
-    display: block;
-
-    
+.preguntas p:target {
+  display: block;
 }
 
 @media only screen and (max-width: 1200px) {
-  
-    main{
-        margin: 10em 2em 2em;
-    }
+  main {
+    margin: 10em 2em 2em;
+  }
 
-    .formulario{
-        padding: 2em 3em;
-    }
-    .texto{
-        font-size: 14px;
-       }
+  .formulario {
+    padding: 2em 3em;
+  }
+  .texto {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  section.contactanos{
+  section.contactanos {
     flex-direction: column;
     margin-bottom: 0cm;
   }
 
-  main{
+  main {
     margin: 9em 2em 0em;
   }
 
-  section.contactanos div{
+  section.contactanos div {
     width: 60%;
-}
-   
+  }
 }
 
 @media only screen and (max-width: 600px) {
-main{
-    margin-top: 6em ;
-}
+  main {
+    margin-top: 6em;
+  }
 
-    div#formulario{
-        margin: 0 1em;
-        padding: 2em 3em;
-        width: 200px;
-        font-size: 14px;
-        min-width: 250px;
-    }
+  div#formulario {
+    margin: 0 1em;
+    padding: 2em 3em;
+    width: 200px;
+    font-size: 14px;
+    min-width: 250px;
+  }
 }

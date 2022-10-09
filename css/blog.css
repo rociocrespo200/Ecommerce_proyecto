@@ -1,45 +1,40 @@
 .mensaje {
-    display: flex;
-    
-align-items: center;
-background-color: #FEF0FD;
-margin: 1em 0;
-overflow: hidden;
-
-
+  display: flex;
+  align-items: center;
+  background-color: #fef0fd;
+  margin: 1em 0;
+  overflow: hidden;
 }
 
-.mensajes{
-   padding: 1em;
-   min-width: 380px;
-   overflow-y: scroll;
-   height: 1000px;
-    background-color: #FEF0FD;
-    
+.mensajes {
+  padding: 1em;
+  min-width: 380px;
+  overflow-y: scroll;
+  height: 1000px;
+  background-color: #fef0fd;
 }
 
 .mensajes::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-.mensaje p{
-    background-color: white;
-    border-radius: 10px;
-    padding: 0.5em;
-    font-size: 14px;
+.mensaje p {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.5em;
+  font-size: 14px;
 }
 
 .mensaje img {
-   
-width: 50px;
-height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-.galeria{
-   max-height: 1030px;
-   box-sizing: border-box;
-   overflow-y: scroll;
-   background-color: rgb(255, 255, 255);
+.galeria {
+  max-height: 1030px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -47,199 +42,175 @@ height: 50px;
   gap: 30px;
   justify-content: center;
   margin: auto 1em;
-    
 }
 
 .galeria::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-.galeria_div_galeria{
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+.galeria_div_galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
-
-.galeria img{
-    width: 200px;
-   height: 150px;
-    border-radius: 10px;
+.galeria img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
 }
 
-.paginacion{
-    width: 350px;
-    display: flex;
-    flex-direction: row;
-    background-color: #abcfd9;
-    border-radius: 10px;
-    
+.paginacion {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  background-color: #abcfd9;
+  border-radius: 10px;
 }
 
+.paginacion a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #ffffff;
 
-
-.paginacion a{
-    box-sizing: border-box;
-    text-decoration: none;
-    color: #ffffff;
-    
-    padding: 10px 20px;
-    
-   
-    
+  padding: 10px 20px;
 }
 
-#icon:hover{
-    scale: 1.1;
-   
+#icon:hover {
+  scale: 1.1;
 }
 
-.paginacion a:hover{
-    display: inline-block;
-    background-color: #52687e28;
-    transition: 0.2s background-color ease;
-    
+.paginacion a:hover {
+  display: inline-block;
+  background-color: #52687e28;
+  transition: 0.2s background-color ease;
 }
-.paginacion_a1:hover{
-
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-
+.paginacion_a1:hover {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-.paginacion_a2:hover{
-
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-
+.paginacion_a2:hover {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.dejarMensaje{
-    margin: 30px 0px 20px;
+.dejarMensaje {
+  margin: 30px 0px 20px;
 }
 
-.dejarMensaje form{
-  
-    display: flex;
-    flex-direction: row;
-    gap:10px;
-    align-items: center;
-    justify-content: center;
- 
+.dejarMensaje form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-textarea{
-    width: 300px;
-    height: 40px;
-    border: 0;
-    border-radius: 6px;
+textarea {
+  width: 300px;
+  height: 40px;
+  border: 0;
+  border-radius: 6px;
 }
 
-.main_blog{
-    position: relative;
-    top: 7.1em;
-   box-sizing: content-box;
-    display: flex;
-    margin: 0 10em;
-    min-height: 0;
-
+.main_blog {
+  position: relative;
+  top: 7.1em;
+  box-sizing: content-box;
+  display: flex;
+  margin: 0 10em;
+  min-height: 0;
 }
 
-footer{
-    position: relative;
-    top: 7.1em;
+footer {
+  position: relative;
+  top: 7.1em;
 }
-
 
 @media only screen and (max-width: 1500px) {
-  
-    main.main_blog{
-        margin: 0 3em;
-    }
+  main.main_blog {
+    margin: 0 3em;
+  }
 
-   section.mensajes{
+  section.mensajes {
     min-width: 300px;
-   }
+  }
 }
 
 @media only screen and (max-width: 1000px) {
+  section.mensajes {
+    min-width: 200px;
+  }
 
-    section.mensajes{
-        min-width: 200px;
-       }
-
-   section.mensajes img{
+  section.mensajes img {
     display: none;
-   }
+  }
 
-   section.mensajes img#icon{
+  section.mensajes img#icon {
     display: block;
-   }
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  
-    main.main_blog{
-       flex-direction: column;
-       gap: 20px;
-    }
+  main.main_blog {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    div.dejarMensaje textarea{
-        width: 2000px;
-        border: 0.1px solid #5090b861;
-    }
+  div.dejarMensaje textarea {
+    width: 2000px;
+    border: 0.1px solid #5090b861;
+  }
 
-    section.mensajes{
-        background-color: #ffffff;
-       }
+  section.mensajes {
+    background-color: #ffffff;
+  }
 
-    div.mensaje{
-        background-color: #ffffff;
-        border-bottom: 0.1px solid #5090b861;
-    }
+  div.mensaje {
+    background-color: #ffffff;
+    border-bottom: 0.1px solid #5090b861;
+  }
 
-   section.mensajes img{
+  section.mensajes img {
     display: unset;
-   }
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  
-    main#main_blog{
-        margin-top: 0em;
-    }
-    
-    main.main_blog{
-        margin: 0 1.5em;
-    }
-    
-    div.paginacion{
-        width:250px ;
-       
-    }
+  main#main_blog {
+    margin-top: 0em;
+  }
 
-    div.paginacion a{
-        padding: 5px 10px;
-       
-    }
+  main.main_blog {
+    margin: 0 1.5em;
+  }
 
-    #galeria{
-       padding: 0;
-    }
+  div.paginacion {
+    width: 250px;
+  }
 
+  div.paginacion a {
+    padding: 5px 10px;
+  }
 
+  #galeria {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  
-  div#galeria_div_galeria img{
+  div#galeria_div_galeria img {
     width: 150px;
-    height: 100px;
+    height: 150px;
   }
-
 }
 
-
+@media only screen and (max-width: 400px) {
+  div#galeria_div_galeria img {
+    width: 100px;
+    height: 100px;
+  }
+}

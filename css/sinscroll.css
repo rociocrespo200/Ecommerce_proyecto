@@ -1,67 +1,59 @@
-body{
-    height: 100%;
-    overflow-y: hidden;
-    position: absolute;
-    width: 100%;
-  }
-
-footer{
-    position: absolute;
-    bottom: 0;
-    box-sizing: border-box;
-    width: 100%;
-    
+body {
+  height: 100%;
+  overflow-y: hidden;
+  position: absolute;
+  width: 100%;
 }
-main{
-    box-sizing: border-box;
-    margin: 3em 10em;
-    height: 590px;
-    position: relative;
-    top: 115px;
-    height: 68vh;
-    overflow-y: hidden;
+
+footer {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+main {
+  box-sizing: border-box;
+  margin: 3em 10em;
+  height: 590px;
+  position: relative;
+  top: 115px;
+  height: 68vh;
+  overflow-y: hidden;
 }
 
 @media only screen and (max-width: 800px) {
-    
-    main#productos{
-      overflow-y: hidden;
-    }
+  main#productos {
+    overflow-y: hidden;
+  }
 
-   #footer_productos{
-        position: relative;
-        bottom: auto;
-    }
-    body#productos{
-        overflow-y: scroll;
-        z-index: 1;
-    }
-
+  #footer_productos {
+    position: relative;
+    bottom: auto;
+  }
+  body#productos {
+    overflow-y: scroll;
+    z-index: 1;
+  }
 }
 
-@media only screen and (max-height: 920px){
-    
-    main#productos{
-        overflow-y: hidden;
-      }
-  
-     #footer_productos{
-          position: relative;
-          top: 5em;
-      }
-      body#productos{
-          overflow-y: scroll;
-          z-index: 1;
-      }
+@media only screen and (max-height: 920px) {
+  main#productos {
+    overflow-y: hidden;
+  }
 
-      
-      @media only screen and (max-width: 1000px){
-        #footer_productos{
-            position: relative;
-            top: 10em;
-        }
-      }
+  #footer_productos {
+    position: relative;
+    top: 5em;
+  }
+  body#productos {
+    overflow-y: scroll;
+    z-index: 1;
+  }
 
-     
-
+  @media only screen and (max-width: 1000px) {
+    #footer_productos {
+      position: relative;
+      top: 10em;
+    }
+  }
 }
