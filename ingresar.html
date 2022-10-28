@@ -37,25 +37,27 @@
     </header>
 
     <main id="ingresar">
+        <script src="js/validacion.js"></script>
         <section class="cont_form">
         <div class="from_principal">
             <h2>Ingresar</h2>
 
             <form action="#" method="post">
                 <label for="usuario"></label>
-                <input type="text" placeholder="Nombre de usuario">
+                <input id="usuarioIngresar" type="text" placeholder="Nombre de usuario">
             </form>
 
             <form action="#" method="post">
                 <label for="password"></label>
-                <input type="password" placeholder="Contraseña">
+                <input id="contraseñaIngresar" type="password" placeholder="Contraseña">
             </form>
 
             <form class="checkbox" action="#" method="post">
                 <input id="checkbox" type="checkbox" name="recordarme"><label for="recordarme">Recordarme</label>
             </form>
 
-            <input class="boton" type="submit" value="Enviar">
+            <div id="mensaje"></div>
+            <input class="boton" type="submit" value="Enviar" onclick="return borrarMensajes(), ingresar()">
 
             <p>Si todavia no tenes una cuenta <br><a href="registrase.html">Registrate</a></p>
         </div>

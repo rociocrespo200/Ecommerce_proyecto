@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ingresar.css">
-    <link rel="stylesheet" href="css/sinscroll.css">
+    
     <title>Pastelito candy - Registrarse</title>
 </head>
 
@@ -35,6 +35,14 @@
         </div>
     </header>
 
+    <script src="js/validacion.js"></script>
+
+    <style>
+        main#ingresar{
+            padding: 12em 10em 6em;
+        }
+    </style>
+
     <main id="ingresar" >
         <section class="cont_form">
         <div class="from_principal">
@@ -42,37 +50,37 @@
 
       <form action="#" method="post">
         <label for="nombre"></label>
-        <input type="text" placeholder="Ingrese su nombre">
+        <input id="nombre" type="text" placeholder="Ingrese su nombre">
       </form>
 
       <form action="#" method="post">
         <label for="apellido"></label>
-        <input type="text" placeholder="Ingrese su apellido">
+        <input id="apellido" type="text" placeholder="Ingrese su apellido">
       </form>
 
       <form action="#" method="post">
         <label for="email"></label>
-        <input type="email" placeholder="Ingrese su email">
+        <input id="email" type="email" placeholder="Ingrese su email">
       </form>
 
       <form action="#" method="post">
         <label for="usuario"></label>
-        <input type="text" placeholder="Ingrese un nombre de usuario">
+        <input id="usuario" type="text" placeholder="Ingrese un nombre de usuario">
       </form>
 
       <form action="#" method="post">
         <label for="password"></label>
-        <input type="password" placeholder="ingrese una contraseña">
+        <input id="contraseña" type="password" placeholder="ingrese una contraseña">
       </form>
 
       <form action="#" method="post">
         <label for="passwordV"></label>
-        <input type="password" placeholder="Repetir contraseña">
+        <input id="contraseñaV" type="password" placeholder="Repetir contraseña">
       </form>
 
-      
+      <div id="mensaje"></div>
 
-      <input class="boton" type="submit" value="Enviar">
+      <input class="boton" type="submit" value="Enviar" onclick="return borrarMensajes(),validarEmail(), validarContraseña(), validarUsuario(), registrarse()">
 
       <p>Si ya tenes una cuenta <br><a href="ingresar.html">Ingresa</a></p>
     </div>

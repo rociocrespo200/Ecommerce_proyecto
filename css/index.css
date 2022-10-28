@@ -38,7 +38,16 @@ div.imagenes {
 }
 
 .section_promociones {
-  padding: 3em 0;
+  padding: 3em 10em;
+
+display: flex;
+flex-direction: row;
+align-items: center;
+
+}
+
+#flecha_izq{
+  transform: rotate(180deg);
 }
 
 .imagenes_1 {
@@ -81,7 +90,7 @@ h2 {
 
 .promociones {
   display: flex;
-  margin: 0 13em;
+  margin: 0 4em;
   gap: 20px;
   overflow-x: scroll;
 
@@ -151,6 +160,10 @@ h2 {
     font-size: 14px;
     padding: 30px 4em;
   }
+
+  section.section_promociones{
+    padding: 3em 4em;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -203,6 +216,10 @@ h2 {
 
   #div_sinfondo {
     width: 580px;
+  }
+
+  .promociones div {
+    min-width: 100%;
   }
 
   #promociones img {
